@@ -5,4 +5,4 @@ https://github.com/PanduWS94/mochachai-demo-panduws94.git
 
 untuk menjalankan test bisa dilakukan clone terlebih dahulu
 lalu masukkan perintah: npm install
- dan masukkan perintah: npx test
+ dan masukkan perintah: npm run test:report

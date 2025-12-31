@@ -17,7 +17,10 @@
   "version": "1.0.0",
   "main": "ts-registrasi.js",
   "scripts": {
-    "test": "mocha test/authCrud.test.js --reporter mochawesome --reporter-options reportDir=reports,reportFilename=index,overwrite=false,html=true,json=true"
+    "test": "mocha",
+    "test:api": "mocha test",
+    "test:single": "mocha test/001.login.test.js",
+    "test:report": "mocha test --reporter mochawesome --reporter-options reportDir=reports,reportFilename=api-report,html=true,json=true"
   },
   "author": "Pandu",
   "license": "ISC"

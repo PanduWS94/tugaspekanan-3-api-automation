@@ -10,11 +10,11 @@ const response = await request.post('/product/add')
   .send(newProduct);
 
 describe('API Add Product', () => {
-  it('TC-006_harus berhasil add product dan mendapat response 201', async () => {
+  it('TC-008_harus berhasil add product dan mendapat response 201', async () => {
     expect(response.status).to.equal(201);
   }).timeout(2000);
 
-  it('TC-007_harus berhasil mendapatkan response "title"', async () => {
+  it('TC-009_harus berhasil mendapatkan response "title"', async () => {
     expect(response.text).to.include('Kijang Kapsul');
   }).timeout(2000);
 });
